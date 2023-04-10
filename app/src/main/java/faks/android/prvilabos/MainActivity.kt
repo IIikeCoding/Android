@@ -11,7 +11,6 @@ class MainActivity : AppCompatActivity() {
 
 
     private lateinit var binding : ActivityMainBinding
-    private val NUMBER_OF_ROWS : Int = 7
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -331,6 +330,19 @@ class MainActivity : AppCompatActivity() {
             return moved
         }
 
+    }
+
+
+    private fun getCurrentNumberValue(): Int{
+        val numberOne = Integer.parseInt(binding.rowOneNumber.text.toString())
+        val numberTwo = Integer.parseInt(binding.rowTwoNumber.text.toString())
+        val numberThree = Integer.parseInt(binding.rowThreeNumber.text.toString())
+        val numberFour = Integer.parseInt(binding.rowFourNumber.text.toString())
+        val numberFive = Integer.parseInt(binding.rowFiveNumber.text.toString())
+        val numberSix = Integer.parseInt(binding.rowSixNumber.text.toString())
+        val numberSeven = Integer.parseInt(binding.rowSevenNumber.text.toString())
+
+        return numberSeven + numberSix*10 + numberFive*100 + numberFour*1000 + numberThree*10000 + numberTwo*100000 + numberOne*1000000
     }
 
 }
