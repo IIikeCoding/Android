@@ -407,6 +407,7 @@
         android:layout_width="99dp"
         android:layout_height="47dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
         android:text="0"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
@@ -417,6 +418,7 @@
         android:id="@+id/row_two_number"
         android:layout_width="99dp"
         android:layout_height="47dp"
+        android:layout_marginTop="10dp"
         android:text="0"
         android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@+id/row_one_number"
@@ -427,6 +429,7 @@
         android:id="@+id/row_three_number"
         android:layout_width="99dp"
         android:layout_height="47dp"
+        android:layout_marginTop="10dp"
         android:text="0"
         android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@+id/row_two_number"
@@ -437,6 +440,7 @@
         android:id="@+id/row_four_number"
         android:layout_width="99dp"
         android:layout_height="47dp"
+        android:layout_marginTop="10dp"
         android:lineSpacingExtra="16sp"
         android:text="0"
         android:textAlignment="center"
@@ -448,6 +452,7 @@
         android:id="@+id/row_five_number"
         android:layout_width="99dp"
         android:layout_height="47dp"
+        android:layout_marginTop="10dp"
         android:text="0"
         android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@+id/row_four_number"
@@ -457,6 +462,7 @@
         android:id="@+id/row_six_number"
         android:layout_width="99dp"
         android:layout_height="47dp"
+        android:layout_marginTop="10dp"
         android:text="0"
         android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@+id/row_five_number"
@@ -466,6 +472,7 @@
         android:id="@+id/row_seven_number"
         android:layout_width="99dp"
         android:layout_height="47dp"
+        android:layout_marginTop="10dp"
         android:text="0"
         android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@+id/row_six_number"
@@ -512,31 +519,6 @@
         app:layout_constraintStart_toEndOf="@+id/mulButton"
         app:layout_constraintTop_toBottomOf="@+id/row_four_number" />
 
-    <TextView
-        android:id="@+id/resultText"
-        android:layout_width="146dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="12dp"
-        android:rotationX="0"
-        android:rotationY="2"
-        android:text="@string/result"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.246"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/row_six_number" />
-
-    <TextView
-        android:id="@+id/finalResultTextView"
-        android:layout_width="148dp"
-        android:layout_height="31dp"
-        android:layout_marginEnd="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/row_five_number"
-        app:layout_constraintTop_toBottomOf="@+id/resultText"
-        app:layout_constraintVertical_bias="0.142" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -551,10 +533,9 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/finalResultTextView"
-        app:layout_constraintHorizontal_bias="0.265"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/row_five_number" />
 
