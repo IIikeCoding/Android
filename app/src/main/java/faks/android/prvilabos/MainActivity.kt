@@ -281,6 +281,18 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
+        val resultTextView = binding.finalResultTextView
+        val plusButton = binding.plusButton
+        plusButton.setOnClickListener{
+
+            val currValue = Integer.parseInt(resultTextView.text.toString()) + getCurrentNumberValue()
+
+            resultTextView.text = currValue.toString()
+
+
+        }
+
     }
 
 

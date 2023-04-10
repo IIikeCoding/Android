@@ -539,4 +539,30 @@
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/row_five_number" />
 
+    <TextView
+        android:id="@+id/onlyStaticText"
+        android:layout_width="122dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="28dp"
+        android:lineSpacingExtra="10sp"
+        android:text="Result:"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/row_seven_number"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <TextView
+        android:id="@+id/finalResultTextView"
+        android:layout_width="290dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="64dp"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toEndOf="@+id/onlyStaticText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
