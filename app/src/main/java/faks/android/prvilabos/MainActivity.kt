@@ -18,48 +18,46 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-
-
         val btn1 = binding.rowOneButtonOne
-        var movedBtn1 : Boolean = false
-        btn1.setOnClickListener{
-            movedBtn1 = moveTopButton( btn1, movedBtn1, binding.rowOneNumber)
+        var movedBtn1: Boolean = false
+        btn1.setOnClickListener {
+            movedBtn1 = moveTopButton(btn1, movedBtn1, binding.rowOneNumber)
         }
 
         val btn2 = binding.rowTwoButtonOne
-        var movedBtn2 : Boolean = false
-        btn2.setOnClickListener{
-            movedBtn2 = moveTopButton( btn2, movedBtn2, binding.rowTwoNumber)
+        var movedBtn2: Boolean = false
+        btn2.setOnClickListener {
+            movedBtn2 = moveTopButton(btn2, movedBtn2, binding.rowTwoNumber)
         }
 
         val btn3 = binding.rowThreeButtonOne
-        var movedBtn3 : Boolean = false
-        btn3.setOnClickListener{
-            movedBtn3 = moveTopButton( btn3, movedBtn3, binding.rowThreeNumber)
+        var movedBtn3: Boolean = false
+        btn3.setOnClickListener {
+            movedBtn3 = moveTopButton(btn3, movedBtn3, binding.rowThreeNumber)
         }
 
         val btn4 = binding.rowFourButtonOne
-        var movedBtn4 : Boolean = false
-        btn4.setOnClickListener{
-            movedBtn4 = moveTopButton( btn4, movedBtn4, binding.rowFourNumber)
+        var movedBtn4: Boolean = false
+        btn4.setOnClickListener {
+            movedBtn4 = moveTopButton(btn4, movedBtn4, binding.rowFourNumber)
         }
 
         val btn5 = binding.rowFiveButtonOne
-        var movedBtn5 : Boolean = false
-        btn5.setOnClickListener{
-            movedBtn5 = moveTopButton( btn5, movedBtn5, binding.rowFiveNumber)
+        var movedBtn5: Boolean = false
+        btn5.setOnClickListener {
+            movedBtn5 = moveTopButton(btn5, movedBtn5, binding.rowFiveNumber)
         }
 
         val btn6 = binding.rowSixButtonOne
-        var movedBtn6 : Boolean = false
-        btn6.setOnClickListener{
-            movedBtn6 = moveTopButton( btn6, movedBtn6, binding.rowSixNumber)
+        var movedBtn6: Boolean = false
+        btn6.setOnClickListener {
+            movedBtn6 = moveTopButton(btn6, movedBtn6, binding.rowSixNumber)
         }
 
         val btn7 = binding.rowSevenButtonOne
-        var movedBtn7 : Boolean = false
-        btn7.setOnClickListener{
-            movedBtn7 = moveTopButton( btn7, movedBtn7, binding.rowSevenNumber)
+        var movedBtn7: Boolean = false
+        btn7.setOnClickListener {
+            movedBtn7 = moveTopButton(btn7, movedBtn7, binding.rowSevenNumber)
         }
 
 
@@ -76,21 +74,45 @@ class MainActivity : AppCompatActivity() {
         val rowOneButtonFive = binding.rowOneButtonFive
         var movedRowOneButtonFive = false
 
-        rowOneButtonTwo.setOnClickListener{
-            movedRowOneButtonTwo = moveBottomButton(rowOneButtonTwo, true, movedRowOneButtonTwo, movedRowOneButtonThree, binding.rowOneNumber)
+        rowOneButtonTwo.setOnClickListener {
+            movedRowOneButtonTwo = moveBottomButton(
+                rowOneButtonTwo,
+                true,
+                movedRowOneButtonTwo,
+                movedRowOneButtonThree,
+                binding.rowOneNumber
+            )
         }
 
 
-        rowOneButtonThree.setOnClickListener{
-            movedRowOneButtonThree = moveBottomButton(rowOneButtonThree, movedRowOneButtonTwo, movedRowOneButtonThree, movedRowOneButtonFour, binding.rowOneNumber)
+        rowOneButtonThree.setOnClickListener {
+            movedRowOneButtonThree = moveBottomButton(
+                rowOneButtonThree,
+                movedRowOneButtonTwo,
+                movedRowOneButtonThree,
+                movedRowOneButtonFour,
+                binding.rowOneNumber
+            )
         }
 
-        rowOneButtonFour.setOnClickListener{
-            movedRowOneButtonFour = moveBottomButton(rowOneButtonFour, movedRowOneButtonThree, movedRowOneButtonFour, movedRowOneButtonFive, binding.rowOneNumber)
+        rowOneButtonFour.setOnClickListener {
+            movedRowOneButtonFour = moveBottomButton(
+                rowOneButtonFour,
+                movedRowOneButtonThree,
+                movedRowOneButtonFour,
+                movedRowOneButtonFive,
+                binding.rowOneNumber
+            )
         }
 
-        rowOneButtonFive.setOnClickListener{
-            movedRowOneButtonFive = moveBottomButton( rowOneButtonFive, movedRowOneButtonFour, movedRowOneButtonFive, false, binding.rowOneNumber)
+        rowOneButtonFive.setOnClickListener {
+            movedRowOneButtonFive = moveBottomButton(
+                rowOneButtonFive,
+                movedRowOneButtonFour,
+                movedRowOneButtonFive,
+                false,
+                binding.rowOneNumber
+            )
         }
 
 
@@ -107,21 +129,45 @@ class MainActivity : AppCompatActivity() {
         val rowTwoButtonFive = binding.rowTwoButtonFive
         var movedRowTwoButtonFive = false
 
-        rowTwoButtonTwo.setOnClickListener{
-            movedRowTwoButtonTwo = moveBottomButton(rowTwoButtonTwo, true, movedRowTwoButtonTwo, movedRowTwoButtonThree, binding.rowTwoNumber)
+        rowTwoButtonTwo.setOnClickListener {
+            movedRowTwoButtonTwo = moveBottomButton(
+                rowTwoButtonTwo,
+                true,
+                movedRowTwoButtonTwo,
+                movedRowTwoButtonThree,
+                binding.rowTwoNumber
+            )
         }
 
 
-        rowTwoButtonThree.setOnClickListener{
-            movedRowTwoButtonThree = moveBottomButton(rowTwoButtonThree, movedRowTwoButtonTwo, movedRowTwoButtonThree, movedRowTwoButtonFour, binding.rowTwoNumber)
+        rowTwoButtonThree.setOnClickListener {
+            movedRowTwoButtonThree = moveBottomButton(
+                rowTwoButtonThree,
+                movedRowTwoButtonTwo,
+                movedRowTwoButtonThree,
+                movedRowTwoButtonFour,
+                binding.rowTwoNumber
+            )
         }
 
-        rowTwoButtonFour.setOnClickListener{
-            movedRowTwoButtonFour = moveBottomButton(rowTwoButtonFour, movedRowTwoButtonThree, movedRowTwoButtonFour, movedRowTwoButtonFive, binding.rowTwoNumber)
+        rowTwoButtonFour.setOnClickListener {
+            movedRowTwoButtonFour = moveBottomButton(
+                rowTwoButtonFour,
+                movedRowTwoButtonThree,
+                movedRowTwoButtonFour,
+                movedRowTwoButtonFive,
+                binding.rowTwoNumber
+            )
         }
 
-        rowTwoButtonFive.setOnClickListener{
-            movedRowTwoButtonFive = moveBottomButton( rowTwoButtonFive, movedRowTwoButtonFour, movedRowTwoButtonFive, false, binding.rowTwoNumber)
+        rowTwoButtonFive.setOnClickListener {
+            movedRowTwoButtonFive = moveBottomButton(
+                rowTwoButtonFive,
+                movedRowTwoButtonFour,
+                movedRowTwoButtonFive,
+                false,
+                binding.rowTwoNumber
+            )
         }
 
 
@@ -138,21 +184,45 @@ class MainActivity : AppCompatActivity() {
         val rowThreeButtonFive = binding.rowThreeButtonFive
         var movedRowThreeButtonFive = false
 
-        rowThreeButtonTwo.setOnClickListener{
-            movedRowThreeButtonTwo = moveBottomButton(rowThreeButtonTwo, true, movedRowThreeButtonTwo, movedRowThreeButtonThree, binding.rowThreeNumber)
+        rowThreeButtonTwo.setOnClickListener {
+            movedRowThreeButtonTwo = moveBottomButton(
+                rowThreeButtonTwo,
+                true,
+                movedRowThreeButtonTwo,
+                movedRowThreeButtonThree,
+                binding.rowThreeNumber
+            )
         }
 
 
-        rowThreeButtonThree.setOnClickListener{
-            movedRowThreeButtonThree = moveBottomButton(rowThreeButtonThree, movedRowThreeButtonTwo, movedRowThreeButtonThree, movedRowThreeButtonFour, binding.rowThreeNumber)
+        rowThreeButtonThree.setOnClickListener {
+            movedRowThreeButtonThree = moveBottomButton(
+                rowThreeButtonThree,
+                movedRowThreeButtonTwo,
+                movedRowThreeButtonThree,
+                movedRowThreeButtonFour,
+                binding.rowThreeNumber
+            )
         }
 
-        rowThreeButtonFour.setOnClickListener{
-            movedRowThreeButtonFour = moveBottomButton(rowThreeButtonFour, movedRowThreeButtonThree, movedRowThreeButtonFour, movedRowThreeButtonFive, binding.rowThreeNumber)
+        rowThreeButtonFour.setOnClickListener {
+            movedRowThreeButtonFour = moveBottomButton(
+                rowThreeButtonFour,
+                movedRowThreeButtonThree,
+                movedRowThreeButtonFour,
+                movedRowThreeButtonFive,
+                binding.rowThreeNumber
+            )
         }
 
-        rowThreeButtonFive.setOnClickListener{
-            movedRowThreeButtonFive = moveBottomButton( rowThreeButtonFive, movedRowThreeButtonFour, movedRowThreeButtonFive, false, binding.rowThreeNumber)
+        rowThreeButtonFive.setOnClickListener {
+            movedRowThreeButtonFive = moveBottomButton(
+                rowThreeButtonFive,
+                movedRowThreeButtonFour,
+                movedRowThreeButtonFive,
+                false,
+                binding.rowThreeNumber
+            )
         }
 
 
@@ -169,23 +239,46 @@ class MainActivity : AppCompatActivity() {
         val rowFourButtonFive = binding.rowFourButtonFive
         var movedRowFourButtonFive = false
 
-        rowFourButtonTwo.setOnClickListener{
-            movedRowFourButtonTwo = moveBottomButton(rowFourButtonTwo, true, movedRowFourButtonTwo, movedRowFourButtonThree, binding.rowFourNumber)
+        rowFourButtonTwo.setOnClickListener {
+            movedRowFourButtonTwo = moveBottomButton(
+                rowFourButtonTwo,
+                true,
+                movedRowFourButtonTwo,
+                movedRowFourButtonThree,
+                binding.rowFourNumber
+            )
         }
 
 
-        rowFourButtonThree.setOnClickListener{
-            movedRowFourButtonThree = moveBottomButton(rowFourButtonThree, movedRowFourButtonTwo, movedRowFourButtonThree, movedRowFourButtonFour, binding.rowFourNumber)
+        rowFourButtonThree.setOnClickListener {
+            movedRowFourButtonThree = moveBottomButton(
+                rowFourButtonThree,
+                movedRowFourButtonTwo,
+                movedRowFourButtonThree,
+                movedRowFourButtonFour,
+                binding.rowFourNumber
+            )
         }
 
-        rowFourButtonFour.setOnClickListener{
-            movedRowFourButtonFour = moveBottomButton(rowFourButtonFour, movedRowFourButtonThree, movedRowFourButtonFour, movedRowFourButtonFive, binding.rowFourNumber)
+        rowFourButtonFour.setOnClickListener {
+            movedRowFourButtonFour = moveBottomButton(
+                rowFourButtonFour,
+                movedRowFourButtonThree,
+                movedRowFourButtonFour,
+                movedRowFourButtonFive,
+                binding.rowFourNumber
+            )
         }
 
-        rowFourButtonFive.setOnClickListener{
-            movedRowFourButtonFive = moveBottomButton( rowFourButtonFive, movedRowFourButtonFour, movedRowFourButtonFive, false, binding.rowFourNumber)
+        rowFourButtonFive.setOnClickListener {
+            movedRowFourButtonFive = moveBottomButton(
+                rowFourButtonFive,
+                movedRowFourButtonFour,
+                movedRowFourButtonFive,
+                false,
+                binding.rowFourNumber
+            )
         }
-
 
 
         // ROW FIVE
@@ -201,21 +294,45 @@ class MainActivity : AppCompatActivity() {
         val rowFiveButtonFive = binding.rowFiveButtonFive
         var movedRowFiveButtonFive = false
 
-        rowFiveButtonTwo.setOnClickListener{
-            movedRowFiveButtonTwo = moveBottomButton(rowFiveButtonTwo, true, movedRowFiveButtonTwo, movedRowFiveButtonThree, binding.rowFiveNumber)
+        rowFiveButtonTwo.setOnClickListener {
+            movedRowFiveButtonTwo = moveBottomButton(
+                rowFiveButtonTwo,
+                true,
+                movedRowFiveButtonTwo,
+                movedRowFiveButtonThree,
+                binding.rowFiveNumber
+            )
         }
 
 
-        rowFiveButtonThree.setOnClickListener{
-            movedRowFiveButtonThree = moveBottomButton(rowFiveButtonThree, movedRowFiveButtonTwo, movedRowFiveButtonThree, movedRowFiveButtonFour, binding.rowFiveNumber)
+        rowFiveButtonThree.setOnClickListener {
+            movedRowFiveButtonThree = moveBottomButton(
+                rowFiveButtonThree,
+                movedRowFiveButtonTwo,
+                movedRowFiveButtonThree,
+                movedRowFiveButtonFour,
+                binding.rowFiveNumber
+            )
         }
 
-        rowFiveButtonFour.setOnClickListener{
-            movedRowFiveButtonFour = moveBottomButton(rowFiveButtonFour, movedRowFiveButtonThree, movedRowFiveButtonFour, movedRowFiveButtonFive, binding.rowFiveNumber)
+        rowFiveButtonFour.setOnClickListener {
+            movedRowFiveButtonFour = moveBottomButton(
+                rowFiveButtonFour,
+                movedRowFiveButtonThree,
+                movedRowFiveButtonFour,
+                movedRowFiveButtonFive,
+                binding.rowFiveNumber
+            )
         }
 
-        rowFiveButtonFive.setOnClickListener{
-            movedRowFiveButtonFive = moveBottomButton( rowFiveButtonFive, movedRowFiveButtonFour, movedRowFiveButtonFive, false, binding.rowFiveNumber)
+        rowFiveButtonFive.setOnClickListener {
+            movedRowFiveButtonFive = moveBottomButton(
+                rowFiveButtonFive,
+                movedRowFiveButtonFour,
+                movedRowFiveButtonFive,
+                false,
+                binding.rowFiveNumber
+            )
         }
 
 
@@ -232,21 +349,45 @@ class MainActivity : AppCompatActivity() {
         val rowSixButtonFive = binding.rowSixButtonFive
         var movedRowSixButtonFive = false
 
-        rowSixButtonTwo.setOnClickListener{
-            movedRowSixButtonTwo = moveBottomButton(rowSixButtonTwo, true, movedRowSixButtonTwo, movedRowSixButtonThree, binding.rowSixNumber)
+        rowSixButtonTwo.setOnClickListener {
+            movedRowSixButtonTwo = moveBottomButton(
+                rowSixButtonTwo,
+                true,
+                movedRowSixButtonTwo,
+                movedRowSixButtonThree,
+                binding.rowSixNumber
+            )
         }
 
 
-        rowSixButtonThree.setOnClickListener{
-            movedRowSixButtonThree = moveBottomButton(rowSixButtonThree, movedRowSixButtonTwo, movedRowSixButtonThree, movedRowSixButtonFour, binding.rowSixNumber)
+        rowSixButtonThree.setOnClickListener {
+            movedRowSixButtonThree = moveBottomButton(
+                rowSixButtonThree,
+                movedRowSixButtonTwo,
+                movedRowSixButtonThree,
+                movedRowSixButtonFour,
+                binding.rowSixNumber
+            )
         }
 
-        rowSixButtonFour.setOnClickListener{
-            movedRowSixButtonFour = moveBottomButton(rowSixButtonFour, movedRowSixButtonThree, movedRowSixButtonFour, movedRowSixButtonFive, binding.rowSixNumber)
+        rowSixButtonFour.setOnClickListener {
+            movedRowSixButtonFour = moveBottomButton(
+                rowSixButtonFour,
+                movedRowSixButtonThree,
+                movedRowSixButtonFour,
+                movedRowSixButtonFive,
+                binding.rowSixNumber
+            )
         }
 
-        rowSixButtonFive.setOnClickListener{
-            movedRowSixButtonFive = moveBottomButton( rowSixButtonFive, movedRowSixButtonFour, movedRowSixButtonFive, false, binding.rowSixNumber)
+        rowSixButtonFive.setOnClickListener {
+            movedRowSixButtonFive = moveBottomButton(
+                rowSixButtonFive,
+                movedRowSixButtonFour,
+                movedRowSixButtonFive,
+                false,
+                binding.rowSixNumber
+            )
         }
 
 
@@ -263,35 +404,100 @@ class MainActivity : AppCompatActivity() {
         val rowSevenButtonFive = binding.rowSevenButtonFive
         var movedRowSevenButtonFive = false
 
-        rowSevenButtonTwo.setOnClickListener{
-            movedRowSevenButtonTwo = moveBottomButton(rowSevenButtonTwo, true, movedRowSevenButtonTwo, movedRowSevenButtonThree, binding.rowSevenNumber)
+        rowSevenButtonTwo.setOnClickListener {
+            movedRowSevenButtonTwo = moveBottomButton(
+                rowSevenButtonTwo,
+                true,
+                movedRowSevenButtonTwo,
+                movedRowSevenButtonThree,
+                binding.rowSevenNumber
+            )
         }
 
 
-        rowSevenButtonThree.setOnClickListener{
-            movedRowSevenButtonThree = moveBottomButton(rowSevenButtonThree, movedRowSevenButtonTwo, movedRowSevenButtonThree, movedRowSevenButtonFour, binding.rowSevenNumber)
+        rowSevenButtonThree.setOnClickListener {
+            movedRowSevenButtonThree = moveBottomButton(
+                rowSevenButtonThree,
+                movedRowSevenButtonTwo,
+                movedRowSevenButtonThree,
+                movedRowSevenButtonFour,
+                binding.rowSevenNumber
+            )
         }
 
-        rowSevenButtonFour.setOnClickListener{
-            movedRowSevenButtonFour = moveBottomButton(rowSevenButtonFour, movedRowSevenButtonThree, movedRowSevenButtonFour, movedRowSevenButtonFive, binding.rowSevenNumber)
+        rowSevenButtonFour.setOnClickListener {
+            movedRowSevenButtonFour = moveBottomButton(
+                rowSevenButtonFour,
+                movedRowSevenButtonThree,
+                movedRowSevenButtonFour,
+                movedRowSevenButtonFive,
+                binding.rowSevenNumber
+            )
         }
 
-        rowSevenButtonFive.setOnClickListener{
-            movedRowSevenButtonFive = moveBottomButton( rowSevenButtonFive, movedRowSevenButtonFour, movedRowSevenButtonFive, false, binding.rowSevenNumber)
+        rowSevenButtonFive.setOnClickListener {
+            movedRowSevenButtonFive = moveBottomButton(
+                rowSevenButtonFive,
+                movedRowSevenButtonFour,
+                movedRowSevenButtonFive,
+                false,
+                binding.rowSevenNumber
+            )
         }
-
 
 
         val resultTextView = binding.finalResultTextView
-        val plusButton = binding.plusButton
-        plusButton.setOnClickListener{
 
-            val currValue = Integer.parseInt(resultTextView.text.toString()) + getCurrentNumberValue()
+        val plusButton = binding.plusButton
+        plusButton.setOnClickListener {
+
+            val currValue =
+                Integer.parseInt(resultTextView.text.toString()) + getCurrentNumberValue()
 
             resultTextView.text = currValue.toString()
 
 
         }
+
+        val minusButton = binding.minusButton
+        minusButton.setOnClickListener {
+
+            val currValue =
+                Integer.parseInt(resultTextView.text.toString()) - getCurrentNumberValue()
+
+            resultTextView.text = currValue.toString()
+
+
+        }
+
+        val multiplyButton = binding.mulButton
+        multiplyButton.setOnClickListener {
+
+            val currValue =
+                Integer.parseInt(resultTextView.text.toString()) * getCurrentNumberValue()
+
+            resultTextView.text = currValue.toString()
+
+
+        }
+
+        val divideButton = binding.divideButton
+        divideButton.setOnClickListener {
+
+            val currValue =
+                Integer.parseInt(resultTextView.text.toString()) / getCurrentNumberValue()
+
+            resultTextView.text = currValue.toString()
+
+
+        }
+
+
+        binding.clearButt?.setOnClickListener {
+
+            resultTextView.text = "0"
+        }
+
 
     }
 
