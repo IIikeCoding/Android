@@ -1,17 +1,19 @@
 package faks.android.prvilabos
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
+import android.widget.Switch
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import faks.android.prvilabos.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity(){
+class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
 
 
     private lateinit var binding : ActivityMainBinding
@@ -496,15 +498,24 @@ class MainActivity : AppCompatActivity(){
 
         }
 
-
-        binding.clearButt?.setOnClickListener {
+        binding.clearButt.setOnClickListener {
 
             resultTextView.text = "0"
         }
 
+
         //spinners
 
         //theme
+        val languageSpinner : Spinner = binding.languageSpinner
+        ArrayAdapter.createFromResource(this,R.array.Languages,android.R.layout.simple_spinner_item).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            languageSpinner.adapter = adapter
+        }
+
+        languageSpinner.onItemSelectedListener = this
 
 
 
@@ -573,6 +584,13 @@ class MainActivity : AppCompatActivity(){
         return numberSeven + numberSix*10 + numberFive*100 + numberFour*1000 + numberThree*10000 + numberTwo*100000 + numberOne*1000000
     }
 
+    override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+        TODO("Not yet implemented")
+    }
+
+    override fun onNothingSelected(p0: AdapterView<*>?) {
+        TODO("Not yet implemented")
+    }
 
 
 }
