@@ -7,4 +7,16 @@
     <string name="mul">x</string>
     <string name="minus">-</string>
     <string name="plus">+</string>
+
+    <string-array name="Themes">
+            <item>Light</item>
+            <item>Dark</item>
+    </string-array>
+
+    <string-array name="Languages">
+        <item>English</item>
+        <item>German</item>
+        <item>Croatian</item>
+    </string-array>
+
 </resources>

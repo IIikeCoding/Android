@@ -1,13 +1,17 @@
 package faks.android.prvilabos
 
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import faks.android.prvilabos.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(){
 
 
     private lateinit var binding : ActivityMainBinding
@@ -498,6 +502,11 @@ class MainActivity : AppCompatActivity() {
             resultTextView.text = "0"
         }
 
+        //spinners
+
+        //theme
+
+
 
     }
 
@@ -560,7 +569,11 @@ class MainActivity : AppCompatActivity() {
         val numberSix = Integer.parseInt(binding.rowSixNumber.text.toString())
         val numberSeven = Integer.parseInt(binding.rowSevenNumber.text.toString())
 
+
         return numberSeven + numberSix*10 + numberFive*100 + numberFour*1000 + numberThree*10000 + numberTwo*100000 + numberOne*1000000
     }
 
+
+
 }
+
